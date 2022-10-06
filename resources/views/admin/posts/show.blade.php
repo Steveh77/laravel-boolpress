@@ -7,7 +7,7 @@
         </header>
         <div class="clearfix">
             @if ($post->image)
-                <img class="float-left mr-3" src="{{ $post->image }}"
+                <img class="float-left mr-3" src="{{ asset('storage/' . $post->image) }}"
                     alt=""style="
                 height: 200px;
             ">

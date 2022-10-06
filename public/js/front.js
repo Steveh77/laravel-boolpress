@@ -6854,7 +6854,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nul[data-v-d5a2cdd0] {\r\n    list-style-type: none;\n}\r\n", ""]);
+exports.push([module.i, "\nul[data-v-d5a2cdd0] {\n    list-style-type: none;\n}\n", ""]);
 
 // exports
 
@@ -6873,7 +6873,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#not-found {\r\n    height: 90vh\n}\r\n", ""]);
+exports.push([module.i, "\n#not-found {\n    height: 90vh\n}\n", ""]);
 
 // exports
 
@@ -54698,7 +54698,7 @@ var routes = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\MAMP\htdocs\Laravel\laravel-api\resources\js\front.js */"./resources/js/front.js");
+module.exports = __webpack_require__(/*! C:\MAMP\htdocs\Laravel\laravel-boolpress\resources\js\front.js */"./resources/js/front.js");
 
 
 /***/ })
