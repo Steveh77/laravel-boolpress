@@ -9,7 +9,9 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
+use App\Mail\PostPublicationMail;
 
 class PostController extends Controller
 {
@@ -64,6 +66,11 @@ class PostController extends Controller
 
 
         if (array_key_exists('tags', $data)) $new_post->tags()->attach($data['tags']);
+
+        // creato il post , invio una mail all'admin
+        $mail = new PostPublicationMail();
+        $user_email = Auth::user()->email;
+        Mail::to($user_email)->send($mail);
 
         return redirect()->route('admin.posts.show', $new_post)
             ->with('message', 'Post creato con successo')
